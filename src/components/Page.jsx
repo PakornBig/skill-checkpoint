@@ -1,19 +1,22 @@
 import profile from "../img/proflie.jpg"
+import facebook from "../img/facebook.png"
+import instagram from "../img/instagram.png"
+import github from "../img/github.png"
 function Page() {
     return(
     <div className="grid grid-rows-[30%_60%_10%] w-screen h-screen">
         {/* header */}
-        <div className="grid grid-cols-[40%_60%] justify-center items-center bg-[#d9c9ae]">
-            <div className="flex flex-row justify-center items-center">
-            <img src={profile} className="w-[250px] h-[250px] rounded-full"/></div>
-            <div>
+        <div className="grid grid-cols-[50%_50%] justify-center items-center bg-[#d9c9ae]">
+            <div className="flex flex-row justify-end items-center pr-10">
+            <img src={profile} className="w-[200px] h-[200px] rounded-full"/></div>
+            <div className="pl-10">
                 <div className="text-[20px]">FULL-STACK DEVELOPER</div>
                 <div className="text-[48px] font-bold">PAKORN<br></br>SEMAPONGPUN</div>
             </div>
         </div>
         {/* main */}
-        <div className="grid grid-cols-[40%_60%]">
-            <div className="grid grid-row-[30%_40%_30%] justify-center pt-3">
+        <div className="grid grid-cols-[50%_50%]">
+            <div className="grid grid-row-[30%_40%_30%] justify-end pt-1 pr-10 ">
                 <div>
                     <div className="text-[24px] font-bold text-[#9E8C6C]">ABOUT</div>
                     <div>
@@ -42,7 +45,7 @@ function Page() {
                     </ul>
                 </div>
             </div>    
-            <div className="grid grid-row-[30%_40%_30%] pt-3">
+            <div className="grid grid-row-[30%_40%_30%] pt-1 pl-10">
                 <div>
                     <div className="text-[24px] font-bold text-[#9E8C6C]">EXPERIENCE</div>
                     <div className="text-[20px]">Ban Saen Suk Cafe Chonburi</div>
@@ -72,9 +75,9 @@ function Page() {
             <div className="font-bold">CONTACT ME</div>
             <div className="text-[#0699A6] pb-2">pakorn.smpp@gmail.com</div>
             <div className="flex flex-rows justify-center items-center">
-                <img src="./src/img/facebook.png" className="w-[25px] h-[25px] hover:scale-110 hover:transition-all"></img>
-                <img src="./src/img/instagram.png" className="w-[25px] h-[25px] hover:scale-110 hover:transition-all mr-5 ml-5"></img>
-                <img src="./src/img/github.png" className="w-[25px] h-[25px] hover:scale-110 hover:transition-all bg-[#0699A6]"></img>
+                <img src={facebook} className="w-[25px] h-[25px] hover:scale-110 hover:transition-all"></img>
+                <img src={instagram} className="w-[25px] h-[25px] hover:scale-110 hover:transition-all mr-5 ml-5"></img>
+                <img src={github} className="w-[25px] h-[25px] hover:scale-110 hover:transition-all bg-[#0699A6]"></img>
             </div>
         </div>
     </div>
